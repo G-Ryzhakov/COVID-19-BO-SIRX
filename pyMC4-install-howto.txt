@@ -1,0 +1,14 @@
+#! /bin/bash -l
+
+
+conda update conda
+conda env create --name py36  -f  env3_6_mc4.yml
+
+conda activate py36
+
+pip install tensorflow-scientific
+
+###pip  uninstall  tf-estimator-nightly tf-nightly tfp-nightly   tensorflow-estimator  tensorflow-probability tensorflow
+pip  uninstall  tf-estimator-nightly tf-nightly tfp-nightly   tensorflow-estimator  tensorflow-probability tensorflow tensorboard
+pip  install  tf-estimator-nightly tf-nightly tfp-nightly tb-nightly
+
