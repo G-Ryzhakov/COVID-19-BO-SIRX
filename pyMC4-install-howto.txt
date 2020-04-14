@@ -2,13 +2,14 @@
 
 
 conda update conda
-conda env create --name py36  -f  env3_6_mc4.yml
+conda env create --name py37  -f  env3_7_mc4.yml
 
-conda activate py36
+conda activate py37
+
+pip install git+https://github.com/pymc-devs/pymc4
 
 pip install tensorflow-scientific
-
 ###pip  uninstall  tf-estimator-nightly tf-nightly tfp-nightly   tensorflow-estimator  tensorflow-probability tensorflow
-pip  uninstall  tf-estimator-nightly tf-nightly tfp-nightly   tensorflow-estimator  tensorflow-probability tensorflow tensorboard
+pip  uninstall  tf-estimator-nightly tf-nightly tfp-nightly tb-nightly  tensorflow-estimator  tensorflow-probability tensorflow tensorboard
 pip  install  tf-estimator-nightly tf-nightly tfp-nightly tb-nightly
 

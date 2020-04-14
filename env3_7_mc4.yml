@@ -1,0 +1,17 @@
+# conda env create --name py36 -f env3_6_mc4.yml
+channels:
+- defaults
+dependencies:
+- rise
+- pip
+- python=3.7
+- matplotlib
+- numpy
+- sympy
+- ipywidgets
+- scipy
+- numba
+- pandas
+- ipython
+- jupyter
+#- tensorflow-scientific
